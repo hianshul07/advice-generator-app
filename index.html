@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="./tailwind.config.js"></script>
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Frontend Mentor | Advice generator app</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<main
+			class="h-screen w-screen bg-[#202632] flex flex-col items-center justify-center"
+		>
+			<div
+				id="card"
+				class="flex flex-col items-center bg-[#313a49] p-8 text-[#cee3e9] text-2xl m-8 rounded-2xl text-center font-bold font-[Manrope]"
+			>
+				<h3 class="text-[#53ffa9] text-base font-light pt-4 pb-8">
+					Advice #
+					<span id="advice-id"></span>
+				</h3>
+				<p id="advice"></p>
+				<div class="divider py-8">
+					<img src="./images/pattern-divider-mobile.svg" alt="" />
+				</div>
+			</div>
+			<button
+				id="button"
+				class="bg-[#53ffa9] p-6 rounded-full relative top-[-70px]"
+				onclick="getData()"
+			>
+				<img src="./images/icon-dice.svg" alt="" class="h-8" />
+			</button>
+		</main>
+
+		<!-- <div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+		<script src="./script.js"></script>
+	</body>
+</html>
+
