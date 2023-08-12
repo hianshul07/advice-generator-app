@@ -1,9 +1,11 @@
 const updateAdvice = (advice) => {
 	const adviceId = document.querySelector('#advice-id');
 	const adviceContent = document.querySelector('#advice');
+	const adviceHeading = document.querySelector('#heading')
 
 	adviceId.textContent = advice.slip.id;
 	adviceContent.textContent = advice.slip.advice;
+	adviceHeading.style.display = 'block'
 };
 
 const getData = async () => {

@@ -36,13 +36,14 @@
 				id="card"
 				class="flex flex-col items-center bg-[#313a49] p-8 text-[#cee3e9] text-2xl m-8 rounded-2xl text-center font-bold font-[Manrope]"
 			>
-				<h3 class="text-[#53ffa9] text-base font-light pt-4 pb-8">
+				<h3 class="text-[#53ffa9] text-base font-light pt-4 pb-8 hidden" id="heading">
 					Advice #
 					<span id="advice-id"></span>
 				</h3>
 				<p id="advice"></p>
 				<div class="divider py-8">
-					<img src="./images/pattern-divider-mobile.svg" alt="" />
+					<img src="./images/pattern-divider-mobile.svg" alt="divider-image-mobile" class="md:hidden"/>
+					<img src="./images/pattern-divider-desktop.svg" alt="divider-image-desktop" class="hidden md:block"/>
 				</div>
 			</div>
 			<button
